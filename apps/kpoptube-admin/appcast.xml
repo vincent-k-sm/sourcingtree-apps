@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>KpopTube-admin</title>
+        <item>
+            <title>0.0.1 (1)</title>
+            <pubDate>월, 30  3월 2026 05:03:42 +0000</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>0.0.1</sparkle:shortVersionString>
+            <enclosure url="https://github.com/vincent-k-sm/sourcingtree-apps/releases/download/kpoptube-admin-0.0.1-1/test-app.zip" length="102588" type="application/octet-stream" sparkle:edSignature="EwLc0nxz8+mxHoY1zzolKzH9SIqmfqudfdjEZy5ZDqPf6k1Wf5q3BGu3ptzlaBDCX3Q4T5sMml7eM5/s1+48Dw==" />
+        </item>
+    </channel>
+</rss>
