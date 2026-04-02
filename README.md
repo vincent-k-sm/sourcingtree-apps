@@ -15,6 +15,7 @@ macOS/iOS 앱 배포 포탈. GitHub Releases + GitHub Pages + Sparkle 자동 업
 |----|------------|-------------------|--------|
 | KpopTube Admin | `kpoptube-admin-` | k-pop-tube-f90bc | admin_releases |
 | AD Remover Admin | `ad-remover-` | ad-blocker-508e5 | ad_remover_releases |
+| LaunchBay | `launchbay-` | - | - |
 
 ## 구조
 
@@ -29,6 +30,8 @@ sourcingtree_admin/
       appcast.xml           -- Sparkle 업데이트 피드
     ad-remover/
       appcast.xml           -- Sparkle 업데이트 피드
+    launchbay/
+      appcast.xml           -- Sparkle 업데이트 피드
 ```
 
 ## URL
@@ -36,6 +39,7 @@ sourcingtree_admin/
 - 다운로드 페이지: https://vincent-k-sm.github.io/sourcingtree_admin/
 - Sparkle Feed (KpopTube): https://vincent-k-sm.github.io/sourcingtree_admin/apps/kpoptube-admin/appcast.xml
 - Sparkle Feed (AD Remover): https://vincent-k-sm.github.io/sourcingtree_admin/apps/ad-remover/appcast.xml
+- Sparkle Feed (LaunchBay): https://vincent-k-sm.github.io/sourcingtree_admin/apps/launchbay/appcast.xml
 
 ## 배포 방법
 
