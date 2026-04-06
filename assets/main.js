@@ -4,7 +4,7 @@ const REPO_NAME = 'sourcingtree_admin';
 // 앱별 태그 prefix 매핑
 const APP_TAG_PREFIX = {
     'kpoptube-admin': 'kpoptube-admin-',
-    'ad-remover': 'ad-remover-'
+    'ad-remover': 'ad-remover-',
     'launchbay': 'launchbay-'
 };
 
@@ -27,8 +27,7 @@ async function fetchLatestRelease(appId) {
             version: appRelease.tag_name.replace(prefix, ''),
             url: zipAsset ? zipAsset.browser_download_url : appRelease.html_url,
             date: new Date(appRelease.published_at).toLocaleDateString('ko-KR')
-            'launchbay': 'launchbay-'
-};
+        };
     } catch (e) {
         return null;
     }
