@@ -8,7 +8,7 @@
             <sparkle:version>12</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/vincent-k-sm/sourcingtree_admin/releases/download/launchbay-1.0.0-14/LaunchBay.zip" length="5359923" type="application/octet-stream" sparkle:edSignature="V6no4f81NX9Bp+AZwqIaI1DvvnSzHEEXf5aVWmfGjXZfvUCcPjrXAXkxTdF9kw9WKW6/73Nbiiwv0OdAF9IhDg=="/>
+            <enclosure url="https://github.com/vincent-k-sm/sourcingtree_admin/releases/download/launchbay-1.0.0-15/LaunchBay.zip" length="5374872" type="application/octet-stream" sparkle:edSignature="o52eMfgU40Z07ZefyE0QJmEkr4JW0KcrbFgEo9UPeg8JA4EPGinSL0wsCkdM3reh/Qcb3wmtB54hYTsvUhJGBQ=="/>
         </item>
     </channel>
 </rss>
