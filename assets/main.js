@@ -7,6 +7,7 @@ const APP_TAG_PREFIX = {
     'ad-remover': 'ad-remover-',
     'launchbay': 'launchbay-'
     'adremoveradmin': 'adremoveradmin-',
+    'kpoptubeadmin': 'kpoptubeadmin-',
 };
 
 async function fetchLatestRelease(appId) {
