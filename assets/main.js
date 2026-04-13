@@ -3,11 +3,9 @@ const REPO_NAME = 'sourcingtree_admin';
 
 // 앱별 태그 prefix 매핑
 const APP_TAG_PREFIX = {
-    'kpoptube-admin': 'kpoptube-admin-',
-    'ad-remover': 'ad-remover-',
-    'launchbay': 'launchbay-'
-    'adremoveradmin': 'adremoveradmin-',
     'kpoptubeadmin': 'kpoptubeadmin-',
+    'adremoveradmin': 'adremoveradmin-',
+    'launchbay': 'launchbay-',
 };
 
 async function fetchLatestRelease(appId) {
@@ -28,30 +26,30 @@ async function fetchLatestRelease(appId) {
         return {
             version: appRelease.tag_name.replace(prefix, ''),
             url: zipAsset ? zipAsset.browser_download_url : appRelease.html_url,
-            date: new Date(appRelease.published_at).toLocaleDateString('ko-KR')
+            date: appRelease.published_at?.split('T')[0] || '',
         };
-    } catch (e) {
+    } catch {
         return null;
     }
 }
 
-async function init() {
-    for (const appId of Object.keys(APP_TAG_PREFIX)) {
-        const versionEl = document.querySelector(`.app-version[data-app="${appId}"]`);
-        const downloadEl = document.querySelector(`.download-btn[data-app="${appId}"]`);
+async function initPage() {
+    const cards = document.querySelectorAll('.app-card');
+    for (const card of cards) {
+        const appId = card.id;
+        const versionEl = card.querySelector('.app-version');
+        const downloadBtn = card.querySelector('.download-btn');
 
         const release = await fetchLatestRelease(appId);
-
         if (release) {
             versionEl.textContent = `v${release.version} (${release.date})`;
-            downloadEl.href = release.url;
-            downloadEl.textContent = '다운로드';
+            downloadBtn.href = release.url;
+            downloadBtn.textContent = '다운로드';
         } else {
-            versionEl.textContent = '아직 릴리스 없음';
-            downloadEl.classList.add('disabled');
-            downloadEl.textContent = '준비 중';
+            versionEl.textContent = '릴리즈 없음';
+            downloadBtn.style.display = 'none';
         }
     }
 }
 
-init();
+initPage();
